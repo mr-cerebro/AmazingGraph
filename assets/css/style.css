@@ -1,0 +1,131 @@
+@import url ('https://fonts.googleapis.com/css2? family = Roboto: wght @ 300; 400; 500; 700; 900 & display = swap');
+
+:root {
+  --font: 'Roboto', sans-serif;
+
+  --color-orange: #d2872c;
+  --color-gray: #766F68;
+  --color-white: #fff;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-back: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+    opacity: .9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header {
+    width: 90%;
+    max-width: 980px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+.header__menu .header__items {
+    display: inline-block;
+    list-style: none;
+}
+
+.header__menu .header__items li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header__menu--mobile {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.header__logo {
+    font-weight: var(--font-back);
+    color: var(--color-orange);
+    font-size: 30px;
+}
+
+.header__items li a {
+    color: var(--color-gray);
+    font-weight: var(--font-bold);
+}
+
+.header .hero {
+    margin-top: 70px;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero__group {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.hero__group img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.hero__group h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: var(--color-gray);
+}
+
+.hero__group p {
+    font-size: 20px;
+    font-weight: var(--font-regular);
+    color: var(--color-gray);
+}
+
+.hero__group .hero__link {
+    display: inline-block;
+    background: var(--color-orange);
+    color: var(--color-white);
+    text-transform: capitalize;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 8px;
+    transition: background 0.5s;
+}
